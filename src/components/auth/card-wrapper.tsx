@@ -16,7 +16,7 @@ const CardWrapper = ({children, headerLabel, backButtonLabel, backButtonHref, sh
         <CardHeader><Header label={headerLabel}/></CardHeader>
         <CardContent> {children} </CardContent>
         {showSocial && <CardFooter className="w-full justify-center"><Social/></CardFooter>}
-        <CardFooter><BackButton href={backButtonHref} label={backButtonLabel}/></CardFooter>
+        <CardFooter className="w-full justify-center"><BackButton href={backButtonHref} label={backButtonLabel}/></CardFooter>
         </Card>
 }
 
